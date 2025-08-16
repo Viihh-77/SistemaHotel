@@ -42,7 +42,95 @@ public class Atendente {
             } catch (NumberFormatException erro) {
                 System.out.println("Erro: Digite um número.");
             }
-
         }
     }
+
+    /* Cadastro Hóspede */
+    public String cadastroNome() {
+        System.out.println(" ");
+        System.out.println("-- Nome: ");
+        String nome = leia.nextLine();
+        return nome;
+    }
+
+    public String cadastroDocumento() {
+        System.out.println(" ");
+        System.out.println("-- Documento: ");
+        String documento = leia.nextLine();
+        return documento;
+    }
+
+    public String cadastroTelefone() {
+        System.out.println(" ");
+        System.out.println("-- Telefone: ");
+        String telefone = leia.nextLine();
+        return telefone;
+    }
+
+    public int cadastroIdade() {
+        System.out.println(" ");
+        System.out.println("-- Idade: ");
+        int idade = leia.nextInt();
+        return idade;
+
+        /* Colocar tratamento de exceção */
+    }
+
+    /* Cadastro Quarto */
+    public int cadastroNumQuarto() {
+        System.out.println(" ");
+        System.out.println("-- Número do quarto: ");
+        int numQuarto = leia.nextInt();
+        return numQuarto;
+
+        /* Colocar tratamento de exceção */
+    }
+
+    public String cadastroTipo() {
+        System.out.println(" ");
+        System.out.println("-- Tipo: ");
+        String tipo = leia.nextLine();
+        return tipo;
+    }
+
+    public double candastroPreco() {
+        System.out.println(" ");
+        System.out.println("-- Preço: ");
+        double preco = leia.nextDouble();
+        return preco;
+
+        /* Colocar tratamento de exceção */
+    }
+
+    /* Cadastro Reserva */
+    public String cadastroHospede() {
+        System.out.println(" ");
+        System.out.println("-- Nome do hóspede: ");
+        String hospede = leia.nextLine();
+        return hospede;
+    }
+
+    public int cadastroQuartoHospede() {
+        System.out.println(" ");
+        System.out.println("-- Número do quarto: ");
+        int quartoHospede = leia.nextInt();
+        return quartoHospede;
+
+        /* Colocar tratamento de exceção */
+    }
+
+    public String cadastroEntrada() {
+        System.out.println(" ");
+        System.out.println("-- Data de entrada: ");
+        String entrada = leia.nextLine();
+        return entrada;
+    }
+
+    public String cadastroSaida() {
+        System.out.println(" ");
+        System.out.println("-- Data de saída: ");
+        String saida = leia.nextLine();
+        return saida;
+    }
+
 }
