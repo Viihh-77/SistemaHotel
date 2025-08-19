@@ -1,40 +1,45 @@
 package com.apphotel.model;
 
+import java.util.List;
+
 public class Reserva {
 
-    private String hospede;
-    private int quartoReserva;
+    private Hospede hospede;
+    private Quarto numQuarto;
     private String dataEntrada;
     private String dataSaida;
+    private List<Servico> servicos;
 
     public Reserva() {
         this.hospede = null;
-        this.quartoReserva = 0;
+        this.numQuarto = null;
         this.dataEntrada = null;
         this.dataSaida = null;
+        this.servicos = null;
     }
 
-    public Reserva(String hospede, int quartoReserva, String dataEntrada, String dataSaida) {
+    public Reserva(Hospede hospede, Quarto numQuarto, String dataEntrada, String dataSaida, List<Servico> servicos) {
         this.hospede = hospede;
-        this.quartoReserva = quartoReserva;
+        this.numQuarto = numQuarto;
         this.dataEntrada = dataEntrada;
         this.dataSaida = dataSaida;
+        this.servicos = servicos;
     }
 
-    public String getHospede() {
+    public Hospede getHospede() {
         return hospede;
     }
 
-    public void setHospede(String hospede) {
+    public void setHospede(Hospede hospede) {
         this.hospede = hospede;
     }
 
-    public int getQuartoReserva() {
-        return quartoReserva;
+    public Quarto getNumQuarto() {
+        return numQuarto;
     }
 
-    public void setQuartoReserva(int quartoReserva) {
-        this.quartoReserva = quartoReserva;
+    public void setNumQuarto(Quarto numQuarto) {
+        this.numQuarto = numQuarto;
     }
 
     public String getDataEntrada() {
@@ -53,10 +58,23 @@ public class Reserva {
         this.dataSaida = dataSaida;
     }
 
+    public List<Servico> getServicos() {
+        return servicos;
+    }
+
+    public void setServicos(List<Servico> servicos) {
+        this.servicos = servicos;
+    }
+
     @Override
     public String toString() {
         System.out.println(" ");
-        return "Reserva | Hóspede: " + hospede + " | Número do quarto da reserva:  " + quartoReserva + " | Data de entrada: " + dataEntrada + " | Data saída: " + dataSaida + " |"; 
+        return  "Reserva | Hóspede: " + hospede.getNome() +
+                " | Número do Quarto:  " + numQuarto.getNumQuarto() + 
+                " | Entrada: " + dataEntrada + 
+                " | Saída: " + dataSaida +
+                " | Serviços: " + servicos + 
+                " |"; 
     }
     
 }

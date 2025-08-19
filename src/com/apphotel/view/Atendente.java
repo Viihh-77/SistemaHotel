@@ -22,16 +22,10 @@ public class Atendente {
             System.out.println("|        MENU PRINCIPAL       |");
             System.out.println("|                             |");
             System.out.println("| 1 - Cadastrar Hóspede       |");
-            System.out.println("| 2 - Cadastrar Quarto        |");
-            System.out.println("| 3 - Cadastrar Reserva       |");
-            System.out.println("| 4 - Listar hóspedes         |");
-            System.out.println("| 5 - Listar Quartos          |");
-            System.out.println("| 6 - Listar Reservas         |");
-            System.out.println("| 7 - Pesquisar Hóspede       |");
-            System.out.println("| 8 - Pesquisar Quarto        |");
-            System.out.println("| 9 - Pesquisar Reserva       |");
-            System.out.println("| 10 - Editar Hóspede         |");
-            System.out.println("| 11 - Cancelar Reserva       |");
+            System.out.println("| 2 - Listar hóspedes         |");
+            System.out.println("| 3 - Pesquisar Hóspede       |");
+            System.out.println("| 4 - Editar Hóspede          |");
+            System.out.println("| 5 - Cancelar Reserva        |");
             System.out.println("|                             |");
             System.out.println("| 0 - Sair                    |");
             System.out.println("|-----------------------------|");
@@ -43,6 +37,23 @@ public class Atendente {
                 System.out.println("Erro: Digite um número.");
             }
         }
+    }
+
+    public int escolhaCadastro() {
+
+        System.out.println("|------------------------|");
+        System.out.println("|       CADASTRO         |");
+        System.out.println("|                        |");
+        System.out.println("| 1 - Cadastrar hospede  |");
+        System.out.println("| 2 - Cadastrar Quarto   |");
+        System.out.println("| 3 - Cadastrar reserva  |");
+        System.out.println("|------------------------|");
+
+        int escolhaCadastro = leia.nextInt();
+        leia.nextLine();
+        return escolhaCadastro;
+
+        /* Colocar tratamento de exceç */
     }
 
     /* Cadastro Hóspede */
