@@ -22,16 +22,10 @@ public class Atendente {
             System.out.println("|        MENU PRINCIPAL       |");
             System.out.println("|                             |");
             System.out.println("| 1 - Cadastrar Hóspede       |");
-            System.out.println("| 2 - Cadastrar Quarto        |");
-            System.out.println("| 3 - Cadastrar Reserva       |");
-            System.out.println("| 4 - Listar hóspedes         |");
-            System.out.println("| 5 - Listar Quartos          |");
-            System.out.println("| 6 - Listar Reservas         |");
-            System.out.println("| 7 - Pesquisar Hóspede       |");
-            System.out.println("| 8 - Pesquisar Quarto        |");
-            System.out.println("| 9 - Pesquisar Reserva       |");
-            System.out.println("| 10 - Editar Hóspede         |");
-            System.out.println("| 11 - Cancelar Reserva       |");
+            System.out.println("| 2 - Listar hóspedes         |");
+            System.out.println("| 3 - Pesquisar Hóspede       |");
+            System.out.println("| 4 - Editar Hóspede          |");
+            System.out.println("| 5 - Cancelar Reserva        |");
             System.out.println("|                             |");
             System.out.println("| 0 - Sair                    |");
             System.out.println("|-----------------------------|");
@@ -43,6 +37,23 @@ public class Atendente {
                 System.out.println("Erro: Digite um número.");
             }
         }
+    }
+
+    public int escolhaCadastro() {
+
+        System.out.println("|------------------------|");
+        System.out.println("|       CADASTRO         |");
+        System.out.println("|                        |");
+        System.out.println("| 1 - Cadastrar hospede  |");
+        System.out.println("| 2 - Cadastrar Quarto   |");
+        System.out.println("| 3 - Cadastrar reserva  |");
+        System.out.println("|------------------------|");
+
+        int escolhaCadastro = leia.nextInt();
+        leia.nextLine();
+        return escolhaCadastro;
+
+        /* Colocar tratamento de exceç */
     }
 
     /* Cadastro Hóspede */
@@ -103,18 +114,17 @@ public class Atendente {
     }
 
     /* Cadastro Reserva */
-    public String cadastroHospede() {
+    public String cadastroHospedeReserva() {
         System.out.println(" ");
         System.out.println("-- Nome do hóspede: ");
-        String hospede = leia.nextLine();
-        return hospede;
+        return leia.nextLine();
     }
 
-    public int cadastroQuartoHospede() {
+    public int cadastroQuartoReserva() {
         System.out.println(" ");
         System.out.println("-- Número do quarto: ");
-        int quartoHospede = leia.nextInt();
-        return quartoHospede;
+        int numQuarto = leia.nextInt();
+        return numQuarto;
 
         /* Colocar tratamento de exceção */
     }
@@ -122,15 +132,13 @@ public class Atendente {
     public String cadastroEntrada() {
         System.out.println(" ");
         System.out.println("-- Data de entrada: ");
-        String entrada = leia.nextLine();
-        return entrada;
+        return leia.nextLine();
     }
 
     public String cadastroSaida() {
         System.out.println(" ");
         System.out.println("-- Data de saída: ");
-        String saida = leia.nextLine();
-        return saida;
+        return leia.nextLine();
     }
 
     public int escolhaListar(){
