@@ -133,4 +133,74 @@ public class Atendente {
         return saida;
     }
 
+    public int escolhaListar(){
+
+        System.out.println("⌈‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾⌉");
+        System.out.println("|   O QUE DESEJA LISTAR ?   |");
+        System.out.println("|—————————————–—————————————|");
+        System.out.println("|  1· Hóspede | 2· Quarto   |");
+        System.out.println("|———————————————————————————|");
+        System.out.println("|  3· Reserva | 4· Tudo     |");
+        System.out.println("|———————————————————————————|");
+        System.out.println("|  5· Voltar ao Início      |");
+        System.out.println("⌊___________________________⌋.");
+
+        int escolhaListar = Validacao.validarInt(null, 0);
+        return escolhaListar;
+    }
+
+
+    // PESQUISA
+
+    public String pesquisarNomeHospede(){
+        System.out.println("⌈· DIGITE O NOME DO HÓSPEDE  ");
+        System.out.print  ("⌊–→ ");
+        System.out.println("null");
+        return leia.nextLine();
+
+    }
+
+    public String pesquisarTipoQuarto(){
+        System.out.println("⌈· DIGITE O TIPO DO QUARTO  ");
+        System.out.print  ("⌊–→ ");
+        System.out.println("null");
+        return leia.nextLine();
+    }
+
+    public String pesquisarNomeReserva(){
+        System.out.println("⌈· DIGITE O NOME DO HÓSPEDE  ");
+        System.out.print  ("⌊–→ ");
+        System.out.println("null");
+        return leia.nextLine();
+    }
+
+    // EDIÇÃO
+
+    public String editarDadosHospede(){
+        System.out.println("⌈· DIGITE O NOME DO HÓSPEDE  ");
+        System.out.print  ("⌊–→ ");
+        System.out.println("null");
+        return leia.nextLine();
+    }
+
+    // CANCELAR RESERVA
+
+    public int cancelarReserva(){
+        System.out.println("⌈· DIGITE O QUARTO RESERVADO  ");
+        System.out.print  ("⌊–→ ");
+        System.out.println("null");
+        return leia.nextInt();
+    }
+
+    // ABERTURA E FECHAMENTO DO APP!
+
+    public void finalizarApp(){
+        System.out.println("⌈· OBRIGADO POR UTILIZAR O APP!       ⌉");
+        System.out.print  ("⌊–→ GANHE DESCONTO NA PRÓXIMA VISITA! ⌋");
+    }
+
+    public void IniciarApp(){
+        System.out.println("⌈· BEM VINDO! 🏨     ⌉");
+        System.out.print  ("⌊–→ AO GAMEL HOTEL    ⌋");
+    }
 }
