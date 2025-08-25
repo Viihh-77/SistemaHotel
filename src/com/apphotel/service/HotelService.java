@@ -55,8 +55,34 @@ public class HotelService {
                         }
 
                         case 3 -> {
-                            
+                            String nomeHospedeReserva = atendente.cadastroHospedeReserva();
+                            int numeroQuartoReserva = atendente.cadastroQuartoReserva();
+                            String entrada = atendente.cadastroEntrada();
+                            String saida = atendente.cadastroSaida();
 
+                            Hospede hospedeReserva = null;
+                            for (Pessoa pessoa : hospedes) {
+                                if (pessoa instanceof Hospede && pessoa.getNome().equalsIgnoreCase(nomeHospedeReserva)) {
+                                    hospedeReserva = (Hospede) pessoa;
+                                    break;
+                                }
+                            }
+
+                            Quarto quartoReserva = null;
+                            for (Quarto quarto : quartos) {
+                                if (quarto.getNumQuarto() == numeroQuartoReserva) {
+                                    quartoReserva = quarto;
+                                    break;
+                                }
+                            }
+
+                            if (hospedeReserva != null && quartoReserva != null) {
+                                Reserva reserva = new Reserva(hospedeReserva, quartoReserva, entrada, saida, new ArrayList<>());
+                                reservas.add(reserva);
+                                System.out.println("A reserva foi cadastrada com sucesso!");
+                            } else {
+                                System.out.println("A reserva não foi cadastrada!");
+                            }
                         }
                     }
                 }

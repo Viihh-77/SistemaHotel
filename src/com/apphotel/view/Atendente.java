@@ -114,18 +114,17 @@ public class Atendente {
     }
 
     /* Cadastro Reserva */
-    public String cadastroHospede() {
+    public String cadastroHospedeReserva() {
         System.out.println(" ");
         System.out.println("-- Nome do hóspede: ");
-        String hospede = leia.nextLine();
-        return hospede;
+        return leia.nextLine();
     }
 
-    public int cadastroQuartoHospede() {
+    public int cadastroQuartoReserva() {
         System.out.println(" ");
         System.out.println("-- Número do quarto: ");
-        int quartoHospede = leia.nextInt();
-        return quartoHospede;
+        int numQuarto = leia.nextInt();
+        return numQuarto;
 
         /* Colocar tratamento de exceção */
     }
@@ -133,15 +132,13 @@ public class Atendente {
     public String cadastroEntrada() {
         System.out.println(" ");
         System.out.println("-- Data de entrada: ");
-        String entrada = leia.nextLine();
-        return entrada;
+        return leia.nextLine();
     }
 
     public String cadastroSaida() {
         System.out.println(" ");
         System.out.println("-- Data de saída: ");
-        String saida = leia.nextLine();
-        return saida;
+        return leia.nextLine();
     }
 
 }
