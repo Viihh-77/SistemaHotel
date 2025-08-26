@@ -27,7 +27,7 @@ public class Validacao{
                 if(opcaoMenu <= 8 && opcaoMenu >= 0){
 
                     naoValidado = false;
-                    System.out.println("[ O NÚMERO INSERIDO É ] –→ " + opcaoMenu);
+                    System.out.println("[ O NÚMERO INSERIDO É ]: " + opcaoMenu);
 
                 }else{
 
@@ -56,7 +56,7 @@ public class Validacao{
 
             try{
                 opcaoInt = Integer.parseInt(texto);
-                System.out.println("[ O NÚMERO INSERIDO É ] –→ " + opcaoInt);
+                System.out.println("[ O NÚMERO INSERIDO É ]: " + opcaoInt);
 
             }catch(NumberFormatException erro){
                 System.out.println("[ ERRO ]: " + erro.getMessage());
@@ -79,7 +79,7 @@ public class Validacao{
 
             try{
                 opcaoDouble = Double.parseDouble(texto);
-                System.out.println("[ O NÚMERO INSERIDO É ] –→ " + opcaoDouble);
+                System.out.println("[ O NÚMERO INSERIDO É ]: " + opcaoDouble);
 
             }catch(IllegalArgumentException erro){
 

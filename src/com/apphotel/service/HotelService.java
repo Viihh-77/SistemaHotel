@@ -22,6 +22,7 @@ public class HotelService {
 
     public void gerenciarEstoque(int opcaoMenu, Atendente atendente) {
 
+        
         switch (opcaoMenu) {
             
             case 1 -> {
@@ -87,7 +88,14 @@ public class HotelService {
                     }
                 }
             }
+
+            case 2 ->{
+
+            }
+
         }
+
+
     }
 
 }
